@@ -719,7 +719,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -798,7 +797,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
