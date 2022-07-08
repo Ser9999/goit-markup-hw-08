@@ -3,23 +3,24 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 1px solid red; */
-}
-.header .container {
-  display: flex;
-}
-.nav {
-  display: flex;
-  align-items: center;
-}
-.nav__list {
-  display: flex;
-}
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   /* outline: 1px solid red; */
+// }
+// .header .container {
+//   display: flex;
+  
+// }
+// .nav {
+//   display: flex;
+//   align-items: center;
+// }
+// .nav__list {
+//   display: flex;
+// }
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }

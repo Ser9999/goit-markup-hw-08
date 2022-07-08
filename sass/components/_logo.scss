@@ -5,6 +5,11 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+    
+  }
 }
 .logo__dark {
   color: #212121;
@@ -16,4 +21,3 @@
 .header__logo {
   margin-right: 93px;
 }
-

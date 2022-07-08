@@ -45,7 +45,8 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
+
 }
 .portfolio-list .portfolio-filtr {
   font-family: inherit;
@@ -56,8 +57,14 @@
   background-color: #f5f4fa;
 }
 .flex-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    width: calc((100% - 90px) / 3);
+  }
 }
 .portfolio-link {
   display: block;
