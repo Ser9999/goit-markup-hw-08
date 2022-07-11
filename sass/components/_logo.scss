@@ -1,14 +1,18 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+
   @media screen and (max-width: 1199px) {
     font-size: 24px;
     line-height: 1.17;
-    
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 .logo__dark {
@@ -19,5 +23,17 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
