@@ -60,7 +60,7 @@
             >
           </li>
         </ul>
-         <button type="button" class="menu-open-btn">
+        <button type="button" class="menu-open-btn">
           <svg class="icon-mob" width="40" height="40">
             <use href="./images/icons.svg#icon-mob-menu"></use>
           </svg>
@@ -74,7 +74,9 @@
             </button>
             <ul class="mob-menu__list">
               <li class="mob-menu__item">
-                <a href="./index.html" class="mob-menu__link mob-menu__link--current link"
+                <a
+                  href="./index.html"
+                  class="mob-menu__link mob-menu__link--current link"
                   >Студия</a
                 >
               </li>
@@ -122,7 +124,6 @@
           </div>
         </div>
       </div>
-      
     </header>
     <main>
       <section class="section">
@@ -151,12 +152,35 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/techno.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/techno-desk.jpg    1x,
+                        ./images/portfolio/techno-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/techno-tab.jpg    1x,
+                        ./images/portfolio/techno-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/techno-mob.jpg 1x
+                    ./images/portfolio/techno-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/techno-desk.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -173,12 +197,35 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/new-orlean.jpg"
-                    alt="Постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/new-orlean-desk.jpg    1x,
+                        ./images/portfolio/new-orlean-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/new-orlean-tab.jpg    1x,
+                        ./images/portfolio/new-orlean-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/new-orlean-mob.jpg 1x
+                    ./images/portfolio/new-orlean-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/new-orlean-mob.jpg"
+                      alt="Постер"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -198,12 +245,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/sefood-desk.jpg    1x,
+                        ./images/portfolio/sefood-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/sefood-tab.jpg    1x,
+                        ./images/portfolio/sefood-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/sefood-mob.jpg 1x
+                    ./images/portfolio/sefood-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/sefood-desk.jpg"
+                      alt="Ресторан"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -220,12 +291,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/prime.jpg"
-                    alt="Проект прем'єр"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-desk.jpg    1x,
+                        ./images/portfolio/prime-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tab.jpg    1x,
+                        ./images/portfolio/prime-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/prime-mob.jpg 1x
+                    ./images/portfolio/prime-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/prime-desk.jpg"
+                      alt="Проект прем'єр"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -242,12 +337,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Проект коробок"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes.jpg         1x,
+                        ./images/portfolio/boxes-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tab.jpg    1x,
+                        ./images/portfolio/boxes-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/boxes-mob.jpg 1x
+                    ./images/portfolio/boxes-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/boxes.jpg"
+                      alt="Проект коробок"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -264,12 +383,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/borders.jpg"
-                    alt="Натхнення"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/borders.jpg         1x,
+                        ./images/portfolio/borders-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/borders-tab.jpg    1x,
+                        ./images/portfolio/borders-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/borders-mob.jpg 1x
+                    ./images/portfolio/borders-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/borders-mob.jpg"
+                      alt="Натхнення"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -286,12 +429,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/limited-edition.jpg"
-                    alt="Обмежене видання"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-edition.jpg         1x,
+                        ./images/portfolio/limited-edition-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-edition-tab.jpg    1x,
+                        ./images/portfolio/limited-edition-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/limited-edition-mob.jpg 1x
+                    ./images/portfolio/limited-edition-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/limited-edition-mob.jpg"
+                      alt="Обмежене видання"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -308,12 +475,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/lab.jpg"
-                    alt="Проєкт ЛАБ"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/lab.jpg         1x,
+                        ./images/portfolio/lab-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tab.jpg    1x,
+                        ./images/portfolio/lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/lab-mob.jpg 1x
+                    ./images/portfolio/lab-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/lab.jpg"
+                      alt="Проєкт ЛАБ"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -330,12 +521,36 @@
             <li class="flex-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/business.jpg"
-                    alt="Зростаючий бізнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/business.jpg         1x,
+                        ./images/portfolio/business-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-tab.jpg    1x,
+                        ./images/portfolio/business-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                  ./images/portfolio/business-mob.jpg 1x
+                    ./images/portfolio/business-mob-2x.jpg 2x
+                  "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/business-mob.jpg"
+                      alt="Зростаючий бізнес"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="action">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -428,8 +643,7 @@
         </div>
       </div>
     </footer>
-     <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
-  
 </html>

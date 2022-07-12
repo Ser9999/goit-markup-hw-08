@@ -202,8 +202,10 @@
   }
 }
 .mob-menu {
+
   position: fixed;
   background-color: #fff;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;

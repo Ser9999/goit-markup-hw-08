@@ -77,7 +77,9 @@
             </button>
             <ul class="mob-menu__list">
               <li class="mob-menu__item">
-                <a href="./index.html" class="mob-menu__link mob-menu__link--current link"
+                <a
+                  href="./index.html"
+                  class="mob-menu__link mob-menu__link--current link"
                   >Студия</a
                 >
               </li>
@@ -283,34 +285,62 @@
           <h2 class="pictures-title">Чем мы занимаемся</h2>
           <ul class="images">
             <li class="pictures-img">
-              <img
+                        <picture>
+                <source
+                  srcset="./images/img1.jpg 1x, 
+                  ./images/img1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+           <img
                 src="./images/img1.jpg"
                 alt="Написання кодів"
                 width="370"
                 height="294"
               />
+              </picture>
+             
+             
               <div class="product">
                 <h2 class="product-title">Десктопные приложения</h2>
               </div>
             </li>
             <li class="pictures-img">
-              <img
+                <picture>
+                <source
+                  srcset="./images/img2.jpg 1x, 
+                  ./images/img2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+             <img
                 src="./images/img2.jpg"
                 alt="Розробка мобільних додатків"
                 width="370"
                 height="294"
               />
+              </picture>
+             
               <div class="product">
                 <h2 class="product-title">Мобильные приложения</h2>
               </div>
             </li>
             <li class="pictures-img">
-              <img
-                src="./images/img3.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, 
+                  ./images/img3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/img3.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="product">
                 <h2 class="product-title">Дизайнерские решения</h2>
               </div>
@@ -324,12 +354,36 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/img1_1.jpg"
-                alt="Дизайнер продукту"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk-1-1.jpg  1x,
+                    ./images/img-desk-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-tab-1-1.jpg  1x,
+                    ./images/img-tab-1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-mob-1-1.jpg  1x,
+                    ./images/img-mob-1-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img-mob-1-1.jpg"
+                  alt="Дизайнер продукту"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team-wrapper">
                 <h3 class="title">Игорь Демьяненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -365,12 +419,35 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img1_2.jpg"
-                alt="Фронтенд розробник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk-2-1.jpg  1x,
+                    ./images/img-desk-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-tab-2-1.jpg  1x,
+                    ./images/img-tab-2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-mob-2-1.jpg  1x,
+                    ./images/img-mob-2-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img-mob-2-1.jpg"
+                  alt="Дизайнер продукту"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="title">Ольга Репина</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -406,12 +483,35 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img1_3.jpg"
-                alt="Маркетинг"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk-3-1.jpg  1x,
+                    ./images/img-desk-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-tab-3-1.jpg  1x,
+                    ./images/img-tab-3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-mob-3-1.jpg  1x,
+                    ./images/img-mob-3-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img-mob-3-1.jpg"
+                  alt="Дизайнер продукту"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="title">Николай Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -447,12 +547,35 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img1_4.jpg"
-                alt="Дизайнер інтерфейсу користувача"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk-4-1.jpg  1x,
+                    ./images/img-desk-4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-tab-4-1.jpg  1x,
+                    ./images/img-tab-4-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-mob-4-1.jpg  1x,
+                    ./images/img-mob-4-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img-mob-4-1.jpg"
+                  alt="Дизайнер продукту"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="title">Михаил Ермаков</h3>
                 <p class="team-text">UI Designer</p>
