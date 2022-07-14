@@ -87,7 +87,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -973,7 +973,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
@@ -1132,12 +1131,6 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-box {
@@ -1161,9 +1154,6 @@ body {
 }
 
 .address {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -1199,12 +1189,6 @@ body {
 
 .logo__white {
   color: var(--adress-color);
-}
-
-.footer-contacts {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .footer-contacts:not(:last-child) {
@@ -1273,13 +1257,9 @@ body {
 }
 
 /* ------------------footer-modal--------------------- */
-.modal-footer {
-  text-align: center;
-  width: 100%;
-}
 @media screen and (min-width: 1200px) {
   .modal-footer {
-    margin-left: 93px;
+    margin-left: auto;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -1333,6 +1313,11 @@ body {
 @media screen and (min-width: 768px) {
   .footer-input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
   }
 }
 
