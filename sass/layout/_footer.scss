@@ -2,7 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-
 }
 
 .footer-box {
@@ -23,8 +22,12 @@
 }
 
 .address {
-
+  text-align: center;
   margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -55,10 +58,41 @@
   color: var(--adress-color);
 }
 
-
 .footer-contacts:not(:last-child) {
   margin-bottom: 8px;
 }
+
+.footer__mail {
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--link-color);
+  }
+  color: var(--contacts-color);
+}
+.footer__tel {
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--link-color);
+  }
+  color: var(--contacts-color);
+}
+
 /* ---------------footer-soc----------------- */
 .social {
   margin-bottom: 60px;
@@ -117,9 +151,8 @@
 
 /* ------------------footer-modal--------------------- */
 .modal-footer {
- 
   @media screen and (min-width: 1200px) {
-    margin-left:auto;
+    margin-left: auto;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -133,6 +166,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .modal-form-footer {
@@ -168,7 +202,7 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
 }

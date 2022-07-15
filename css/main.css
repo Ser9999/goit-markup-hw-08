@@ -550,7 +550,7 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -563,6 +563,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts__mail {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -571,7 +572,7 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -584,6 +585,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts__tel {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -761,7 +763,6 @@ body {
 @media screen and (max-width: 479px) {
   .menu__soc-list {
     flex-wrap: wrap;
-    font-size: 34px;
   }
 }
 
@@ -773,15 +774,15 @@ body {
   color: #2196f3;
 }
 
-.menu__soc-item:not(:last-child) {
-  margin-right: 5px;
+.menu__soc-item {
+  padding: 5px 10px;
 }
-.menu__soc-item:not(:last-child) .soc-line {
-  width: 22px;
-  height: 0px;
-  margin-left: 5px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+.menu__soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.menu__soc-item .menu__soc-link {
+  width: 1px;
+  height: 100%;
 }
 
 .hero {
@@ -792,7 +793,7 @@ body {
   background-size: cover;
   text-align: center;
   width: 100%;
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
@@ -804,7 +805,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
 }
@@ -902,6 +902,11 @@ body {
   color: var(--title-color);
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 
 .benefits__text {
@@ -1154,7 +1159,12 @@ body {
 }
 
 .address {
+  text-align: center;
   margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .address {
@@ -1193,6 +1203,36 @@ body {
 
 .footer-contacts:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.footer__mail {
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--contacts-color);
+}
+.footer__mail:focus, .footer__mail:hover {
+  color: var(--link-color);
+}
+
+.footer__tel {
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--contacts-color);
+}
+.footer__tel:focus, .footer__tel:hover {
+  color: var(--link-color);
 }
 
 /* ---------------footer-soc----------------- */
@@ -1274,6 +1314,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .modal-form-footer {

@@ -117,7 +117,7 @@
   align-items: center;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -126,17 +126,18 @@
   &:hover {
     color: var(--link-color);
   }
-  color: var(--contacts-color);
   @media screen and (min-width: 1200px) {
     font-size: 14px;
+    line-height: 1.14;
   }
+  color: var(--contacts-color);
 }
 .contacts__tel {
   display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -148,6 +149,7 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 .contacts__icon-mail {
@@ -311,7 +313,6 @@
   display: flex;
   @media screen and (max-width: 479px) {
     flex-wrap: wrap;
-    font-size: 34px;
   }
 }
 .menu__soc-link {
@@ -321,13 +322,15 @@
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.menu__soc-item:not(:last-child) {
-  margin-right: 5px;
-  .soc-line {
-    width: 22px;
-    height: 0px;
-    margin-left: 5px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+
+.menu__soc-item {
+  padding: 5px 10px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .menu__soc-link {
+    width: 1px;
+    height: 100%;
   }
 }
